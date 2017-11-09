@@ -1,0 +1,40 @@
+{
+    "name": "jeffochoa/laravel-wordpress-client",
+    "description": "A small client to request data from a wordpress project using the built-in JSON api.",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "laravel/framework": "5.5.*",
+        "kitetail/zttp": "^0.3.0"
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "^2.4",
+        "orchestra/testbench": "^3.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Ochoa (Jeff)"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WordpressClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WordpressClient\\Providers\\WordpressClientServiceProvider"
+            ],
+            "aliases": {
+                "Wordpress": "WordpressClient\\Facades\\Wordpress"
+            }
+        }
+    }
+}
