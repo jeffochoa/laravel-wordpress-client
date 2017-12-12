@@ -71,7 +71,7 @@ $ composer install
 
 And finally you need to create your own `phpunit.xml` file
 ```bash
-$ cp phpunit.example phpuni.xml
+$ cp phpunit.example phpunit.xml
 ```
 
 Don't forget to set the wordpress api endpoint in your `phpunit.xml` file
